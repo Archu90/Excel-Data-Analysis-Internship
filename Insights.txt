@@ -1,0 +1,8 @@
+Insight 1:
+Using INNER JOIN, we found that only some of the products actually have sales. This means not all products are contributing to the company's revenue.
+
+Insight 2:
+The LEFT JOIN helped us identify products that have never been ordered. These unsold products might need special attention like promotions or discounts to clear inventory.
+
+Insight 3:
+Products that are ordered in larger quantities generate much higher revenue. Focusing on these popular products could boost overall sales performance.

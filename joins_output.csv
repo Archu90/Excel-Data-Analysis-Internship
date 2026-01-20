@@ -1,0 +1,82 @@
+
+SQL*Plus: Release 23.0.0.0.0 - Production on Tue Jan 20 14:27:33 2026
+Version 23.6.0.24.10
+
+Copyright (c) 1982, 2024, Oracle.  All rights reserved.
+
+Enter user-name: sqlplus / as sysdba
+Enter password:
+
+Connected to:
+Oracle Database 23ai Free Release 23.0.0.0.0 - Develop, Learn, and Run for Free
+Version 23.6.0.24.10
+
+SQL> CREATE TABLE Orderss (
+  2      OrderID NUMBER PRIMARY KEY,
+  3      ProductCode VARCHAR2(20),
+  4      Quantity NUMBER
+  5  );
+
+Table created.
+
+SQL> INSERT INTO Orderss VALUES (1, 'P0001', 2);
+
+1 row created.
+
+SQL> INSERT INTO Orderss VALUES (2, 'P0003', 1);
+
+1 row created.
+
+SQL> INSERT INTO Orderss VALUES (3, 'P0005', 4);
+
+1 row created.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SELECT
+  2      p.product_name,
+  3      p.category,
+  4      p.price,
+  5      o.quantity,
+  6      (p.price * o.quantity) AS total_amount
+  7  FROM DAY1_DATA_CLEANING p
+  8  INNER JOIN Orders o
+  9  ON p.product_code = o.productcode;
+
+PRODUCT_NAME
+--------------------------------------------------
+CATEGORY                            PRICE   QUANTITY TOTAL_AMOUNT
+------------------------------ ---------- ---------- ------------
+Product 1
+Clothing                           363.54          2       727.08
+
+Product 3
+Food                                  120          1          120
+
+Product 5
+Stationary                             45          4          180
+
+
+SQL> SELECT
+  2      p.product_name,
+  3      p.stock
+  4  FROM DAY1_DATA_CLEANING p
+  5  LEFT JOIN Orders o
+  6  ON p.product_code = o.productcode
+  7  WHERE o.productcode IS NULL;
+
+PRODUCT_NAME                                            STOCK
+-------------------------------------------------- ----------
+Product 4                                                   5
+Product 10                                                150
+Product 6                                                  30
+Product 9                                                   7
+Product 8                                                  80
+Product 2                                                  20
+Product 7                                                  15
+
+7 rows selected.
+
+SQL>
