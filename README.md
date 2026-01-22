@@ -1,25 +1,62 @@
-Task 3 – SQL Basics (Filtering, Sorting & Aggregations)
+###### **Task 5: Python Basics – Data Cleaning using Pandas**
 
-  Dataset Used
-Superstore Dataset (CSV)
+###### 
 
-Objective
-Practice basic SQL querying skills including filtering, sorting, aggregation, grouping, and exporting results.
+###### &nbsp;**Objective**
 
- Queries Performed
-- SELECT queries to explore data
-- WHERE clause for filtering data
-- ORDER BY for sorting results
-- Aggregation functions: SUM, AVG, COUNT
-- GROUP BY with HAVING clause
-- BETWEEN for filtering date ranges
-- LIKE for pattern matching
-- Top 5 customers by total spend query
+###### The objective of this task is to perform basic data cleaning using Python and pandas in Google Colab.
 
- Files Included
-- queries_task3.sql (All SQL queries)
-- Day3_SQL_Queries_Output.csv (Exported aggregated data)
-- README.md (This file)
+###### &nbsp;
 
- Outcome
-Gained confidence in basic SQL operations typically used in data analyst roles.
+###### **Tools Used**
+
+###### \- Google Colab
+
+###### \- Python
+
+###### \- Pandas
+
+###### \- NumPy
+
+###### 
+
+###### &nbsp;**Dataset**
+
+###### SQL\_Queries\_Output.csv.xlsx
+
+###### 
+
+###### &nbsp;**Steps Performed**
+
+###### \- Uploaded the dataset in Google Colab
+
+###### \- Read the Excel file using pandas
+
+###### \- Checked dataset structure using head() and info()
+
+###### \- Identified missing values using isnull().sum()
+
+###### \- Filled missing values using mean for numeric columns
+
+###### \- Filled missing values using mode for categorical columns
+
+###### \- Checked for duplicate records (no duplicates found)
+
+###### \- Created a new column Record\_Count
+
+###### \- Saved the cleaned dataset as cleaned\_data.csv
+
+###### 
+
+###### &nbsp;**Output Files**
+
+###### \- Task5\_Cleaning.ipynb
+
+###### \- cleaned\_data.csv
+
+###### 
+
+###### &nbsp;**Conclusion**
+
+###### This task shows how Python and pandas can replace manual Excel-based data cleaning by providing efficient, reproducible, and scalable solutions.
+

@@ -1,0 +1,10 @@
+product_id,product_name,category,price,stock,discount,Record_Count
+P0002,Product 2,Electronics,750,20,750,1
+P0003,Product 3,Food,120,50,120,1
+P0004,Product 4,Furniture,1500,5,1500,1
+P0005,Product 5,Stationary,45,200,45,1
+P0006,Product 6,Clothing,399,30,399,1
+P0007,Product 7,Electronics,999,15,999,1
+P0008,Product 8,Food,220,80,220,1
+P0009,Product 9,Furniture,850,7,850,1
+P0010,Product 10,Stationary,60,150,60,1
