@@ -1,0 +1,3 @@
+1. Category-wise analysis shows noticeable variation in prices and stock levels across different product categories.
+2. The price distribution indicates that most products are concentrated in the lower price range.
+3. There is an observable relationship between product price and stock, where lower-priced products tend to have higher stock availability.
