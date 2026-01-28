@@ -1,0 +1,3 @@
+Task 8: SQL Window Functions
+This task demonstrates the use of DENSE_RANK and PARTITION BY.
+Platform used: Programiz (Oracle SQL)
