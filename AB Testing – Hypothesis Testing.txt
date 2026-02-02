@@ -1,0 +1,19 @@
+A/B Testing – Hypothesis Testing (Python)
+
+This project performs A/B Testing to compare room rent between Control (A) and Test (B) groups.
+
+Tools Used:
+Python, Google Colab, pandas, numpy, scipy, matplotlib
+
+Method:
+An independent t-test was applied with alpha = 0.05 to compare the mean room rent of both groups.
+
+Results:
+Control Mean: 8133.33
+Test Mean: 9125.00
+p-value: 1.04e-08
+
+Conclusion:
+The null hypothesis was rejected.
+There is a statistically significant difference between the two groups.
+The Test group performs better than the Control group.
