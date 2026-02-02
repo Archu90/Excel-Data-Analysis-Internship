@@ -1,0 +1,7 @@
+text = """EDA Findings – Task 10
+
+1. Dataset contains numerical housing features.
+2. Target variable MedHouseVal shows right-skewed distribution.
+3. Outliers detected using IQR method.
+4. Outliers were capped instead of removed.
+5. MedHouseVal shows strong correlation with MedInc and AveRooms.
