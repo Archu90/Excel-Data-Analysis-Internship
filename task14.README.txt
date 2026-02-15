@@ -1,0 +1,31 @@
+Overview
+
+Implemented an ETL pipeline using Python and SQLite with a synthetic retail dataset.
+
+Extract
+
+Generated retail dataset using NumPy and saved as raw/retail.csv.
+
+Transform
+
+Removed duplicates
+
+Handled missing values
+
+Standardized columns
+
+Converted data types
+
+Created profit_margin and high_value_customer
+
+Split into customers, orders, and products tables
+
+Load
+
+Saved cleaned data as processed/processed_data.csv
+
+Loaded tables into database.sqlite
+
+Tools
+
+Python, Pandas, NumPy, SQLite, Google Colab
